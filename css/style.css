@@ -1,0 +1,269 @@
+html{
+  font-size: 10px;
+  background-color: #3498DB;
+
+}
+body{
+  width: 90%;
+  min-width:800px;
+  margin: 5px auto;
+  color: #777777;
+}
+
+h1, h2,h3{
+  font-family: "Cinzel Decorative", cursive;
+}
+
+h1{
+  font-size: 4rem;
+  text-align:center;
+  text-shadow: 2px 2px 10px black;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 3rem;
+  text-align: center;
+}
+h3{
+  font-size: 2.2rem;
+  text-align: centre;
+}
+
+p,li{
+  font-family: "Roboto Condensed",sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+
+}
+
+header{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+main,header,article,aside,section,nav,footer{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5%;
+  margin: 5px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+nav ul li{
+  width: 20%;
+  float: left;
+  font-size: 25px;
+  text-align: center;
+  background-color: #19A5E1;
+  color: white;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:hover {
+    background-color: green;
+    opacity: 0.8;
+    color:white;
+}
+
+nav ul li ul {
+list-style: none;
+position: absolute;
+z-index:100;
+}
+
+nav ul li ul li{
+  display: none;
+
+}
+
+nav ul li:hover ul li{
+  display:block;
+  padding-top: 10px;
+  margin: auto;
+  width: 84%;
+  text-align: center;
+  color:inherit;
+}
+nav::after{
+  content: ' ' ;
+  display: table;
+  clear: both;
+
+}
+
+.profile-info{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+  .side-content{
+    padding-left: 20px;
+    margin-left: 20px;
+    box-shadow: inset 5px 0  5px -5px #29627E;
+    font-style: italic;
+    color:#29627E;
+    display: inline-block;
+    height: 200px;
+    line-height: 15px;
+  }
+
+
+.logo{
+  height: 60px;
+  padding-top: 20.15px;
+  flex: 1;
+}
+
+.top-title{
+  text-align:center;
+  flex:7;
+  color: #19A5E1;
+  line-height: 10px;
+
+}
+
+.page-footer{
+  margin-top: 10px;
+  text-align:center;
+  font: bold 16px sans-serif;
+  color: #19A5E1;
+  line-height: 38px;
+}
+
+.page-footer .footer-top{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+.page-footer .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  cursor:pointer;
+  background-color: #19A5E1;
+  font-size: 20px;
+  color: white;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.profile-img{
+  width: 200px;
+  height: 200px;
+}
+
+.batoon{
+  min-width: 100px;
+  min-height: 60px;
+  font-family:'Nunito',sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(rgba(129,230,217,1),rgba(79,209,197,1));
+  border: none;
+  border-radius: 100px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+  cursor:pointer;
+  padding:10px;
+}
+
+.Education-list{
+  width: 100%;
+  margin:0;
+  display:inline-block;
+}
+
+.Education-list ol{
+ list-style-type:none;
+ margin:0;
+ padding:0;
+ counter-reset:li-counter;
+}
+
+.Education-list ol li{
+  position:relative;
+  margin-bottom:1.5em;
+  background-color:#F0D756;
+  padding:0.5em;
+  padding-left: 58px;
+}
+
+
+.Education-list li:hover{
+  box-shadow:inset-1em 0 #6CD6CC;
+  transition: 0.5S;
+}
+
+.Education-list ol li::before{
+  position: absolute;
+  top: -0.3em;
+  left: -0.5em;
+  width: 1.8em;
+  height: 1.2;
+  font-size: 2em;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #6CD6CC;
+  transform: rotate(-20deg);
+  z-index: 99;
+  overflow: hidden;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+}
+
+
+.Education-listli:hover{
+  box-shadow:inset -1em 0 #6CD6CC;
+  transition: 0.5s;
+}
+
+.work-table {
+  width: 100%;
+  margin: auto;
+  border: solid 1px #DDEEEE;
+  border-spacing: 0;
+  font: normal 13px 'Raleway',sans-serif
+}
+
+.work-table thead th {
+  background-color: #6CD6CC;
+  border: solid 1px #DDEEEE;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px # 000;
+
+}
+.work-table tbody td {
+  border: solid 1px #DDEEEE;
+  color: #333;
+  padding: 10PX;
+  text-shadow: 1px 1px 1px #FFF;
+}
+
+.cards{
+  display: flex;
+  flex-wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.cards img{
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow:3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  max-width: 15vw;
+  max-height: 15vh;
+}
